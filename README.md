@@ -1,7 +1,7 @@
 使用　基于canvas撸的一个 Vue头像裁剪控件
 
 单指移动，双指移动、缩放、旋转
-![输入图片说明](./index.gif?raw=true "在这里输入图片标题")
+![输入图片说明](./index.webp?raw=true "在这里输入图片标题")
 输入图片说明
 
 属性 backBoxSize 背景方格大小 默认值：10
