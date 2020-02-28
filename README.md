@@ -1,7 +1,7 @@
 使用　基于canvas撸的一个 Vue头像裁剪控件
 
 单指移动，双指移动、缩放、旋转
-![输入图片说明](http://public.exgou.cn/yizhuang/static/index.gif "在这里输入图片标题")
+![输入图片说明](./index.gif?raw=true "在这里输入图片标题")
 输入图片说明
 
 属性 backBoxSize 背景方格大小 默认值：10
@@ -38,15 +38,12 @@ outImage() 返回裁剪后的图片
 
 使用
 在pubspec.yaml文件中添加
-
+```
 dependencies:
-
   cropperimage:
-
     git:
-
       url: https://gitee.com/wskfjt/flutterhead_clipping_control
-
+```
 
 
 样例：
