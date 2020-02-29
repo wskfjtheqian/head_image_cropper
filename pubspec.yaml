@@ -1,8 +1,8 @@
 name: head_image_cropper
 description: 用于头像图片剪裁.
 version: 0.0.1
-author:
-homepage:
+author: wskfjtheqian <wskfjtheqian@gmail.com>
+homepage: https://github.com/wskfjtheqian/head_image_cropper
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
