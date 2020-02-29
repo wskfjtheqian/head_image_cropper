@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:head_image_cropper/cropper_image.dart';
+import 'package:head_image_cropper/head_image_cropper.dart';
 
 void main() => runApp(MyApp());
 
