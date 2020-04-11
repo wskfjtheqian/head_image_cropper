@@ -23,21 +23,21 @@ class CropperImage extends StatefulWidget {
   final double round;
 
   CropperImage(
-    this.image, {
-    Key key,
-    this.limitations = true,
-    this.isArc = false,
-    this.backBoxSize = 10.0,
-    this.backBoxColor0 = Colors.grey,
-    this.backBoxColor1 = Colors.white,
-    this.maskColor = _defualtMaskColor,
-    this.lineColor = Colors.white,
-    this.lineWidth = 3,
-    this.outWidth = 256.0,
-    this.outHeight = 256.0,
-    this.maskPadding = 20.0,
-    this.round = 8.0,
-  }) : super(key: key);
+      this.image, {
+        Key key,
+        this.limitations = true,
+        this.isArc = false,
+        this.backBoxSize = 10.0,
+        this.backBoxColor0 = Colors.grey,
+        this.backBoxColor1 = Colors.white,
+        this.maskColor = _defualtMaskColor,
+        this.lineColor = Colors.white,
+        this.lineWidth = 3,
+        this.outWidth = 256.0,
+        this.outHeight = 256.0,
+        this.maskPadding = 20.0,
+        this.round = 8.0,
+      }) : super(key: key);
 
   @override
   CropperImageState createState() => CropperImageState();
@@ -107,9 +107,12 @@ class CropperImageState extends State<CropperImage> {
   void initState() {
     super.initState();
     _updateParam();
+  }
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
     _resolveImage();
   }
-
   @override
   void didUpdateWidget(CropperImage oldWidget) {
     if (widget.image != oldWidget.image) {
@@ -143,6 +146,7 @@ class CropperImageState extends State<CropperImage> {
     var listener;
     listener = ImageStreamListener((image, synchronousCall) {
       _painter.image = image.image;
+      context.findRenderObject().markNeedsPaint();
       stream.removeListener(listener);
     });
     stream.addListener(listener);
