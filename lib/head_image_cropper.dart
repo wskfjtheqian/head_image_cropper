@@ -76,7 +76,19 @@ class CropperImage extends RenderObjectWidget {
 
   @override
   CropperImageRender createRenderObject(BuildContext context) {
-    return CropperImageRender();
+    return CropperImageRender()
+      ..limitations = limitations
+      ..isArc = isArc
+      ..backBoxColor0 = backBoxColor0
+      ..backBoxColor1 = backBoxColor1
+      ..backBoxSize = backBoxSize
+      ..maskColor = maskColor
+      ..lineColor = lineColor
+      ..lineWidth = lineWidth
+      ..outWidth = outWidth
+      ..outHeight = outHeight
+      ..maskPadding = maskPadding
+      ..round = limitations ? 0 : round;
   }
 
   @override
