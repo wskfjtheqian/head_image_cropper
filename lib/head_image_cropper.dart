@@ -17,7 +17,7 @@ class CropperImage extends RenderObjectWidget {
     this.image, {
     Key key,
     this.limitations = true,
-    this.isArc = true,
+    this.isArc = false,
     this.backBoxSize = 10.0,
     this.backBoxColor0 = Colors.grey,
     this.backBoxColor1 = Colors.white,
@@ -88,7 +88,7 @@ class CropperImage extends RenderObjectWidget {
       ..outWidth = outWidth
       ..outHeight = outHeight
       ..maskPadding = maskPadding
-      ..round = limitations ? 0 : round;
+      ..round = round;
   }
 
   @override
@@ -105,7 +105,7 @@ class CropperImage extends RenderObjectWidget {
       ..outWidth = outWidth
       ..outHeight = outHeight
       ..maskPadding = maskPadding
-      ..round = limitations ? 0 : round;
+      ..round = round;
     renderObject.markNeedsPaint();
   }
 
@@ -215,7 +215,17 @@ class Pointer {
 
 class CropperImageRender extends RenderProxyBox {
   ui.Image _image;
-  bool limitations = true;
+  bool _limitations = true;
+
+  set limitations(bool value) {
+    _limitations = value;
+    if (_limitations) {
+      rotate1 = 0;
+    }
+  }
+
+  bool get limitations => _limitations;
+
   bool isArc = false;
   double backBoxSize = 10.0;
   Color backBoxColor0 = Colors.grey;
@@ -269,7 +279,7 @@ class CropperImageRender extends RenderProxyBox {
       } else if (event.scrollDelta.dy > 0) {
         scale += 0.05;
       }
-    } else {
+    } else if (!limitations) {
       if (event.scrollDelta.dy < 0) {
         rotate1 -= 0.05;
       } else if (event.scrollDelta.dy > 0) {
