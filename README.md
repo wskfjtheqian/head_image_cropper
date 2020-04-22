@@ -52,8 +52,9 @@ dependencies:
 
 样例：
 ```
+
 import 'package:flutter/material.dart';
-import 'package:head_image_cropper/cropper_image.dart';
+import 'package:head_image_cropper/head_image_cropper.dart';
 
 void main() => runApp(MyApp());
 
@@ -63,7 +64,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State {
-  var _cropperKey = GlobalKey<CropperImageState>();
+  var _cropperKey = GlobalKey();
+
+  ImageProvider _image;
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +77,7 @@ class _MyAppState extends State {
             FlatButton(
               child: Text("保存"),
               onPressed: () {
-                _cropperKey.currentState.outImage().then((image) {
+                (_cropperKey.currentContext as CropperImageElement).outImage().then((image) {
                   //保存或上传代码
                 });
               },
@@ -82,6 +85,7 @@ class _MyAppState extends State {
           ],
         ),
         body: Container(
+          padding: EdgeInsets.all(50),
           child: CropperImage(
             NetworkImage("http://n.sinaimg.cn/sinacn12/564/w1920h1044/20181111/69c3-hnstwwq4987218.jpg"),
             key: _cropperKey,
