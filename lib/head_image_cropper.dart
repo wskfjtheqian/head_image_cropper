@@ -142,7 +142,6 @@ class CropperImageElement extends RenderObjectElement {
   @override
   void forgetChild(Element child) {
     assert(null == child);
-    super.forgetChild(child);
   }
 
   @override
