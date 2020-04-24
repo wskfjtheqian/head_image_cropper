@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/head_image_cropper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/head_image_cropper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
       <workItem from="1587656470268" duration="774000" />
       <workItem from="1587690020629" duration="133000" />
       <workItem from="1587690166589" duration="2625000" />
-      <workItem from="1587693057694" duration="6213000" />
+      <workItem from="1587693057694" duration="6318000" />
     </task>
     <task id="LOCAL-00001" summary="发布插件">
       <created>1582950002387</created>
@@ -120,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587733720949</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="* TODO: 重写代码.&#10;* TODO:添加鼠标支持&#10;* TODO:左键移动&#10;* TODO:滚轮旋转&#10;* TODO:左键＋滚轮缩放&#10;* TODO:添加尺寸限制功能">
+      <created>1587740735724</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587740735724</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,10 +146,10 @@
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
     <state x="772" y="231" width="376" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1587729517867" />
-    <state x="119" y="110" key="CommitChangelistDialog2" timestamp="1587733720463">
+    <state x="119" y="110" key="CommitChangelistDialog2" timestamp="1587740735607">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state x="119" y="110" key="CommitChangelistDialog2/0.0.1920.1037@0.0.1920.1037" timestamp="1587733720463" />
+    <state x="119" y="110" key="CommitChangelistDialog2/0.0.1920.1037@0.0.1920.1037" timestamp="1587740735607" />
     <state width="610" height="466" key="DebuggerActiveHint" timestamp="1587565837567">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
@@ -192,10 +198,10 @@
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
     <state x="660" y="160" width="1026" height="857" key="SettingsEditor/0.0.1920.1037@0.0.1920.1037" timestamp="1587740716735" />
-    <state x="263" y="248" key="Vcs.Push.Dialog.v2" timestamp="1587733723150">
+    <state x="263" y="248" key="Vcs.Push.Dialog.v2" timestamp="1587740749960">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state x="263" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1037@0.0.1920.1037" timestamp="1587733723150" />
+    <state x="263" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1037@0.0.1920.1037" timestamp="1587740749960" />
     <state x="617" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587558951713">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
