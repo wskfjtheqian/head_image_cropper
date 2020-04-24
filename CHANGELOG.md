@@ -14,3 +14,7 @@
 * TODO:滚轮旋转
 * TODO:左键＋滚轮缩放
 * TODO:添加尺寸限制功能
+
+## [2.0.0] - TODO: Add release date.
+
+* 修改BUG.
