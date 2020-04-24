@@ -140,6 +140,12 @@ class CropperImageElement extends RenderObjectElement {
   CropperImage get widget => super.widget as CropperImage;
 
   @override
+  void forgetChild(Element child) {
+    assert(null == child);
+    super.forgetChild(child);
+  }
+
+  @override
   void insertChildRenderObject(RenderObject child, slot) {}
 
   @override
