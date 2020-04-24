@@ -15,6 +15,10 @@
 * TODO:左键＋滚轮缩放
 * TODO:添加尺寸限制功能
 
-## [2.0.0] - TODO: Add release date.
+## [2.0.3] - TODO: Add release date.
 
-* 修改BUG.
+* 修改BUG.## 
+
+[2.0.4] - TODO: Add release date.
+
+* 格式化代码.
