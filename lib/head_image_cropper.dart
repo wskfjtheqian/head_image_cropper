@@ -92,7 +92,8 @@ class CropperImage extends RenderObjectWidget {
   }
 
   @override
-  void updateRenderObject(BuildContext context, CropperImageRender renderObject) {
+  void updateRenderObject(
+      BuildContext context, CropperImageRender renderObject) {
     renderObject
       ..limitations = limitations
       ..isArc = isArc
@@ -134,7 +135,8 @@ class CropperImageElement extends RenderObjectElement {
   CropperImageElement(CropperImage widget) : super(widget);
 
   @override
-  CropperImageRender get renderObject => super.renderObject as CropperImageRender;
+  CropperImageRender get renderObject =>
+      super.renderObject as CropperImageRender;
 
   @override
   CropperImage get widget => super.widget as CropperImage;
@@ -157,7 +159,8 @@ class CropperImageElement extends RenderObjectElement {
     if (null == _image) {
       return;
     }
-    final ImageStream stream = _image.resolve(createLocalImageConfiguration(this));
+    final ImageStream stream =
+        _image.resolve(createLocalImageConfiguration(this));
     var listener;
     listener = ImageStreamListener((image, synchronousCall) {
       renderObject.image = image.image;
@@ -184,18 +187,25 @@ class CropperImageElement extends RenderObjectElement {
 
   Future<ui.Image> outImage() {
     var recorder = PictureRecorder();
-    var canvas = Canvas(recorder, Rect.fromLTRB(0, 0, widget.outWidth, widget.outHeight));
+    var canvas = Canvas(
+        recorder, Rect.fromLTRB(0, 0, widget.outWidth, widget.outHeight));
 
     if (null != _image) {
       var scale = widget.outHeight / (renderObject.bottom - renderObject.top);
-      canvas.translate(renderObject.outWidth / 2 + renderObject.drawX * scale, renderObject.outHeight / 2 + renderObject.drawY * scale);
+      canvas.translate(renderObject.outWidth / 2 + renderObject.drawX * scale,
+          renderObject.outHeight / 2 + renderObject.drawY * scale);
 
       canvas.rotate(renderObject.rotate1);
       canvas.scale(renderObject.scale * scale);
-      canvas.drawImage(renderObject.image, Offset(-renderObject.image.width / 2, -renderObject.image.height / 2), Paint());
+      canvas.drawImage(
+          renderObject.image,
+          Offset(-renderObject.image.width / 2, -renderObject.image.height / 2),
+          Paint());
     }
 
-    return recorder.endRecording().toImage(widget.outWidth.toInt(), widget.outHeight.toInt());
+    return recorder
+        .endRecording()
+        .toImage(widget.outWidth.toInt(), widget.outHeight.toInt());
   }
 
   @override
@@ -296,22 +306,28 @@ class CropperImageRender extends RenderProxyBox {
 
   void handleDownEvent(PointerDownEvent event) {
     if (null == _old1 && _old2?.device != event.device) {
-      _old1 = Pointer(device: event.device, dx: event.position.dx, dy: event.position.dy);
+      _old1 = Pointer(
+          device: event.device, dx: event.position.dx, dy: event.position.dy);
     } else if (null == _old2 && _old1.device != event.device) {
-      _old2 = Pointer(device: event.device, dx: event.position.dx, dy: event.position.dy);
+      _old2 = Pointer(
+          device: event.device, dx: event.position.dx, dy: event.position.dy);
     }
   }
 
   void handleMoveEvent(PointerMoveEvent event) {
     if (_old1?.device == event.device) {
-      _new1 = Pointer(device: event.device, dx: event.position.dx, dy: event.position.dy);
+      _new1 = Pointer(
+          device: event.device, dx: event.position.dx, dy: event.position.dy);
     } else if (_old2?.device == event.device) {
-      _new2 = Pointer(device: event.device, dx: event.position.dx, dy: event.position.dy);
+      _new2 = Pointer(
+          device: event.device, dx: event.position.dx, dy: event.position.dy);
     }
 
     if (null != _old1 && null != _old2 && null != _new1 && null != _new2) {
-      var newLine = math.sqrt(math.pow(_new1.dx - _new2.dx, 2) + math.pow(_new1.dy - _new2.dy, 2));
-      var oldLine = math.sqrt(math.pow(_old1.dx - _old2.dx, 2) + math.pow(_old1.dy - _old2.dy, 2));
+      var newLine = math.sqrt(
+          math.pow(_new1.dx - _new2.dx, 2) + math.pow(_new1.dy - _new2.dy, 2));
+      var oldLine = math.sqrt(
+          math.pow(_old1.dx - _old2.dx, 2) + math.pow(_old1.dy - _old2.dy, 2));
       this.scale *= (newLine / oldLine);
 
       this.drawX += ((_new1.dx - _old1.dx) + (_new2.dx - _old2.dx)) / 2;
@@ -327,7 +343,8 @@ class CropperImageRender extends RenderProxyBox {
         }
       }
       markNeedsPaint();
-    } else if ((null != _old1 && null != _new1) || (null != _old2 && null != _new2)) {
+    } else if ((null != _old1 && null != _new1) ||
+        (null != _old2 && null != _new2)) {
       this.drawX += ((_new1 ?? _new2).dx - (_old1 ?? _old2).dx);
       this.drawY += ((_new1 ?? _new2).dy - (_old1 ?? _old2).dy);
       markNeedsPaint();
@@ -377,7 +394,8 @@ class CropperImageRender extends RenderProxyBox {
       canvas.translate(centerX + drawX, centerY + drawY);
       canvas.rotate(rotate1);
       canvas.scale(scale);
-      canvas.drawImage(_image, Offset(-_image.width / 2, -_image.height / 2), Paint());
+      canvas.drawImage(
+          _image, Offset(-_image.width / 2, -_image.height / 2), Paint());
       canvas.restore();
     }
 
@@ -391,7 +409,10 @@ class CropperImageRender extends RenderProxyBox {
 
       for (double x = 0; x < size.width; x += backBoxSize) {
         canvas.drawRect(
-            Rect.fromLTRB(x, y, x + backBoxSize, y + backBoxSize), Paint()..color = (color = color == backBoxColor1 ? backBoxColor0 : backBoxColor1));
+            Rect.fromLTRB(x, y, x + backBoxSize, y + backBoxSize),
+            Paint()
+              ..color = (color =
+                  color == backBoxColor1 ? backBoxColor0 : backBoxColor1));
       }
     }
   }
