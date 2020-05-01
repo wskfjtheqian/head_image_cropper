@@ -1,4 +1,7 @@
 
+import 'dart:io';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:head_image_cropper/head_image_cropper.dart';
 
@@ -23,8 +26,9 @@ class _MyAppState extends State {
             FlatButton(
               child: Text("保存"),
               onPressed: () {
-                (_cropperKey.currentContext as CropperImageElement).outImage().then((image) {
+                (_cropperKey.currentContext as CropperImageElement).outImage().then((image) async {
                   //保存或上传代码
+                  File("path").writeAsBytesSync((await image.toByteData(format: ImageByteFormat.png)).buffer.asUint8List());
                 });
               },
             )

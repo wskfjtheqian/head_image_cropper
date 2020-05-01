@@ -385,7 +385,7 @@ class CropperImageRender extends RenderProxyBox {
     canvas.save();
     canvas.translate(offset.dx, offset.dy);
     canvas.clipRect(Rect.fromLTWH(0, 0, size.width, size.height));
-    canvas.drawColor(Colors.blue, BlendMode.clear);
+//    canvas.drawColor(Colors.blue, BlendMode.color);
     _onPadding(size);
     _createBack(canvas, size);
     if (null != _image) {
