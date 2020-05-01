@@ -22,3 +22,7 @@
 [2.0.4] - TODO: Add release date.
 
 * 格式化代码.
+
+[2.0.5] - TODO: Add release date.
+
+* 修改WEB端的BUG.

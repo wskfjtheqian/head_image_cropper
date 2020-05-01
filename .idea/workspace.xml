@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,7 @@
       <workItem from="1587693057694" duration="6920000" />
       <workItem from="1587960620198" duration="979000" />
       <workItem from="1587963437032" duration="1258000" />
-      <workItem from="1588326363505" duration="122000" />
+      <workItem from="1588326363505" duration="380000" />
     </task>
     <task id="LOCAL-00001" summary="发布插件">
       <created>1582950002387</created>
@@ -157,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587741256235</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="* TODO: 修改WEB的BUG.">
+      <created>1588326694415</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588326694415</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +173,8 @@
     <MESSAGE value="发布插件" />
     <MESSAGE value="* TODO: 重写代码.&#10;* TODO:添加鼠标支持&#10;* TODO:左键移动&#10;* TODO:滚轮旋转&#10;* TODO:左键＋滚轮缩放&#10;* TODO:添加尺寸限制功能" />
     <MESSAGE value="* TODO: 格式化代码." />
-    <option name="LAST_COMMIT_MESSAGE" value="* TODO: 格式化代码." />
+    <MESSAGE value="* TODO: 修改WEB的BUG." />
+    <option name="LAST_COMMIT_MESSAGE" value="* TODO: 修改WEB的BUG." />
   </component>
   <component name="WindowStateProjectService">
     <state x="423" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587543731900">
@@ -178,10 +185,10 @@
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
     <state x="772" y="231" width="376" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1587729517867" />
-    <state x="119" y="110" key="CommitChangelistDialog2" timestamp="1587741256152">
+    <state x="119" y="110" key="CommitChangelistDialog2" timestamp="1588326694142">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state x="119" y="110" key="CommitChangelistDialog2/0.0.1920.1037@0.0.1920.1037" timestamp="1587741256152" />
+    <state x="119" y="110" key="CommitChangelistDialog2/0.0.1920.1037@0.0.1920.1037" timestamp="1588326694142" />
     <state width="610" height="466" key="DebuggerActiveHint" timestamp="1587565837567">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
@@ -230,10 +237,10 @@
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
     <state x="660" y="160" width="1026" height="857" key="SettingsEditor/0.0.1920.1037@0.0.1920.1037" timestamp="1587740716735" />
-    <state x="263" y="248" key="Vcs.Push.Dialog.v2" timestamp="1587741257085">
+    <state x="263" y="248" key="Vcs.Push.Dialog.v2" timestamp="1588326695460">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state x="263" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1037@0.0.1920.1037" timestamp="1587741257085" />
+    <state x="263" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1037@0.0.1920.1037" timestamp="1588326695460" />
     <state x="617" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587558951713">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
