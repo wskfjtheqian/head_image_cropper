@@ -26,3 +26,7 @@
 [2.0.5] - TODO: Add release date.
 
 * 修改WEB端的BUG.
+
+[2.0.6] - 2020/05/11
+
+* 修改Web端不能输出bytes的BUG

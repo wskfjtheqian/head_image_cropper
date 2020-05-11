@@ -1,6 +1,6 @@
 name: head_image_cropper
 description: A picture cutting part of flutter, which supports square picture and round picture preview. Suitable for fixed size image clipping. Such as cutting the head
-version: 2.0.5
+version: 2.0.6
 homepage: https://github.com/wskfjtheqian/head_image_cropper
 
 environment:
@@ -9,7 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  flutter_web_plugins:
+    sdk: flutter
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -19,6 +20,11 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: CropperImageWebOut
+        fileName: src/cropper_image_web_out.dart
 
   # To add assets to your package, add an assets section, like this:
   # assets:

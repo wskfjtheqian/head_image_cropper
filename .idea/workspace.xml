@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="">
+    <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="* TODO: 修改WEB的BUG.">
+      <change afterPath="$PROJECT_DIR$/lib/src/cropper_image_out.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/cropper_image_web_out.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/head_image_cropper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/head_image_cropper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/head_image_cropper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/head_image_cropper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +23,13 @@
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +58,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="/media/heqian/Document/Develop/9.dart_server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/src" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -50,6 +67,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/src" />
       <recent name="$PROJECT_DIR$/example" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -84,7 +102,11 @@
       <workItem from="1587693057694" duration="6920000" />
       <workItem from="1587960620198" duration="979000" />
       <workItem from="1587963437032" duration="1258000" />
-      <workItem from="1588326363505" duration="380000" />
+      <workItem from="1588326363505" duration="1229000" />
+      <workItem from="1588400589458" duration="3770000" />
+      <workItem from="1588408343510" duration="1613000" />
+      <workItem from="1588985365422" duration="837000" />
+      <workItem from="1589186970063" duration="8748000" />
     </task>
     <task id="LOCAL-00001" summary="发布插件">
       <created>1582950002387</created>
@@ -163,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588326694415</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="* TODO: 修改WEB的BUG.">
+      <created>1588326745547</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588326745547</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,93 +210,96 @@
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
     <state x="423" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1037@0.0.1920.1037" timestamp="1587543731900" />
-    <state x="772" y="231" width="376" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1587729517867">
+    <state x="656" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589190545491">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state x="772" y="231" width="376" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1587729517867" />
-    <state x="119" y="110" key="CommitChangelistDialog2" timestamp="1588326694142">
+    <state x="656" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1589190545491" />
+    <state x="772" y="231" width="376" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1589194691809">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state x="119" y="110" key="CommitChangelistDialog2/0.0.1920.1037@0.0.1920.1037" timestamp="1588326694142" />
-    <state width="610" height="466" key="DebuggerActiveHint" timestamp="1587565837567">
+    <state x="772" y="231" width="376" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1589194691809" />
+    <state x="119" y="110" key="CommitChangelistDialog2" timestamp="1589195449427">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state width="610" height="466" key="DebuggerActiveHint/0.0.1920.1037@0.0.1920.1037" timestamp="1587565837567" />
+    <state x="119" y="110" key="CommitChangelistDialog2/0.0.1920.1037@0.0.1920.1037" timestamp="1589195449427" />
+    <state width="610" height="466" key="DebuggerActiveHint" timestamp="1589194228715">
+      <screen x="0" y="0" width="1920" height="1037" />
+    </state>
+    <state width="610" height="466" key="DebuggerActiveHint/0.0.1920.1037@0.0.1920.1037" timestamp="1589194228715" />
     <state x="99" y="99" width="1722" height="839" key="DiffContextDialog" timestamp="1587548359184">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
     <state x="99" y="99" width="1722" height="839" key="DiffContextDialog/0.0.1920.1037@0.0.1920.1037" timestamp="1587548359184" />
-    <state x="746" y="270" width="734" height="732" key="FileChooserDialogImpl" timestamp="1587633407515">
+    <state x="746" y="270" width="734" height="732" key="FileChooserDialogImpl" timestamp="1588407874978">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state x="746" y="270" width="734" height="732" key="FileChooserDialogImpl/0.0.1920.1037@0.0.1920.1037" timestamp="1587633407515" />
-    <state width="1874" height="141" key="GridCell.Tab.0.bottom" timestamp="1588326623948">
+    <state x="746" y="270" width="734" height="732" key="FileChooserDialogImpl/0.0.1920.1037@0.0.1920.1037" timestamp="1588407874978" />
+    <state width="1874" height="231" key="GridCell.Tab.0.bottom" timestamp="1589196278666">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state width="1874" height="141" key="GridCell.Tab.0.bottom/0.0.1920.1037@0.0.1920.1037" timestamp="1588326623948" />
-    <state width="1874" height="141" key="GridCell.Tab.0.center" timestamp="1588326623948">
+    <state width="1874" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278666" />
+    <state width="1874" height="231" key="GridCell.Tab.0.center" timestamp="1589196278665">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state width="1874" height="141" key="GridCell.Tab.0.center/0.0.1920.1037@0.0.1920.1037" timestamp="1588326623948" />
-    <state width="1874" height="141" key="GridCell.Tab.0.left" timestamp="1588326623947">
+    <state width="1874" height="231" key="GridCell.Tab.0.center/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278665" />
+    <state width="1874" height="231" key="GridCell.Tab.0.left" timestamp="1589196278665">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state width="1874" height="141" key="GridCell.Tab.0.left/0.0.1920.1037@0.0.1920.1037" timestamp="1588326623947" />
-    <state width="1874" height="141" key="GridCell.Tab.0.right" timestamp="1588326623948">
+    <state width="1874" height="231" key="GridCell.Tab.0.left/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278665" />
+    <state width="1874" height="231" key="GridCell.Tab.0.right" timestamp="1589196278666">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state width="1874" height="141" key="GridCell.Tab.0.right/0.0.1920.1037@0.0.1920.1037" timestamp="1588326623948" />
-    <state width="1874" height="141" key="GridCell.Tab.1.bottom" timestamp="1588326623948">
+    <state width="1874" height="231" key="GridCell.Tab.0.right/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278666" />
+    <state width="1874" height="231" key="GridCell.Tab.1.bottom" timestamp="1589196278613">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state width="1874" height="141" key="GridCell.Tab.1.bottom/0.0.1920.1037@0.0.1920.1037" timestamp="1588326623948" />
-    <state width="1874" height="141" key="GridCell.Tab.1.center" timestamp="1588326623948">
+    <state width="1874" height="231" key="GridCell.Tab.1.bottom/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278613" />
+    <state width="1874" height="231" key="GridCell.Tab.1.center" timestamp="1589196278613">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state width="1874" height="141" key="GridCell.Tab.1.center/0.0.1920.1037@0.0.1920.1037" timestamp="1588326623948" />
-    <state width="1874" height="141" key="GridCell.Tab.1.left" timestamp="1588326623948">
+    <state width="1874" height="231" key="GridCell.Tab.1.center/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278613" />
+    <state width="1874" height="231" key="GridCell.Tab.1.left" timestamp="1589196278613">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state width="1874" height="141" key="GridCell.Tab.1.left/0.0.1920.1037@0.0.1920.1037" timestamp="1588326623948" />
-    <state width="1874" height="141" key="GridCell.Tab.1.right" timestamp="1588326623948">
+    <state width="1874" height="231" key="GridCell.Tab.1.left/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278613" />
+    <state width="1874" height="231" key="GridCell.Tab.1.right" timestamp="1589196278613">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state width="1874" height="141" key="GridCell.Tab.1.right/0.0.1920.1037@0.0.1920.1037" timestamp="1588326623948" />
+    <state width="1874" height="231" key="GridCell.Tab.1.right/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278613" />
+    <state x="599" y="226" key="RollbackChangesDialog" timestamp="1589196013041">
+      <screen x="0" y="0" width="1920" height="1037" />
+    </state>
+    <state x="599" y="226" key="RollbackChangesDialog/0.0.1920.1037@0.0.1920.1037" timestamp="1589196013041" />
     <state x="660" y="160" width="1026" height="857" key="SettingsEditor" timestamp="1587740716735">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
     <state x="660" y="160" width="1026" height="857" key="SettingsEditor/0.0.1920.1037@0.0.1920.1037" timestamp="1587740716735" />
-    <state x="263" y="248" key="Vcs.Push.Dialog.v2" timestamp="1588326695460">
+    <state x="815" y="431" key="VCS.ChangelistChooser" timestamp="1589190879186">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state x="263" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1037@0.0.1920.1037" timestamp="1588326695460" />
-    <state x="617" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587558951713">
+    <state x="815" y="431" key="VCS.ChangelistChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1589190879186" />
+    <state x="263" y="248" key="Vcs.Push.Dialog.v2" timestamp="1588326746385">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state x="617" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1587558951713" />
-    <state x="206" y="251" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1587563037462">
+    <state x="263" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1037@0.0.1920.1037" timestamp="1588326746385" />
+    <state x="617" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589190628005">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state x="206" y="251" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1037@0.0.1920.1037" timestamp="1587563037462" />
-    <state x="552" y="222" width="815" height="592" key="find.popup" timestamp="1588326511503">
+    <state x="617" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1589190628005" />
+    <state x="206" y="251" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589193160465">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
-    <state x="552" y="222" width="815" height="592" key="find.popup/0.0.1920.1037@0.0.1920.1037" timestamp="1588326511503" />
+    <state x="206" y="251" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1037@0.0.1920.1037" timestamp="1589193160465" />
+    <state x="552" y="222" width="815" height="592" key="find.popup" timestamp="1589193615958">
+      <screen x="0" y="0" width="1920" height="1037" />
+    </state>
+    <state x="552" y="222" width="815" height="592" key="find.popup/0.0.1920.1037@0.0.1920.1037" timestamp="1589193615958" />
     <state x="229" y="288" key="new project wizard" timestamp="1587633377633">
       <screen x="0" y="0" width="1920" height="1037" />
     </state>
     <state x="229" y="288" key="new project wizard/0.0.1920.1037@0.0.1920.1037" timestamp="1587633377633" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/cropper_image.dart</url>
-          <line>345</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="FlutterRunConfigurationType">
         <watch expression="_pendingPointerEvents" />

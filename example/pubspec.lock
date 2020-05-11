@@ -46,13 +46,18 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_web_plugins:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   head_image_cropper:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "2.0.4"
+    version: "2.0.5"
   matcher:
     dependency: transitive
     description:

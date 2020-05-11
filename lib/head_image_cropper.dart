@@ -9,6 +9,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+import 'src/cropper_image_out.dart';
+
 const Color _defualtMaskColor = Color.fromARGB(160, 0, 0, 0);
 
 ///图像裁剪，适用于头像裁剪和输出固定尺寸的图片裁剪
@@ -186,26 +188,38 @@ class CropperImageElement extends RenderObjectElement {
   }
 
   Future<ui.Image> outImage() {
-    var recorder = PictureRecorder();
-    var canvas = Canvas(
-        recorder, Rect.fromLTRB(0, 0, widget.outWidth, widget.outHeight));
+//    var recorder = PictureRecorder();
+//    var canvas = Canvas(
+//        recorder, Rect.fromLTRB(0, 0, widget.outWidth, widget.outHeight));
+//
+//    if (null != _image) {
+//      var scale = widget.outHeight / (renderObject.bottom - renderObject.top);
+//      canvas.translate(renderObject.outWidth / 2 + renderObject.drawX * scale,
+//          renderObject.outHeight / 2 + renderObject.drawY * scale);
+//
+//      canvas.rotate(renderObject.rotate1);
+//      canvas.scale(renderObject.scale * scale);
+//      canvas.drawImage(
+//          renderObject.image,
+//          Offset(-renderObject.image.width / 2, -renderObject.image.height / 2),
+//          Paint());
+//    }
+//
+//    return recorder
+//        .endRecording()
+//        .toImage(widget.outWidth.toInt(), widget.outHeight.toInt());
 
-    if (null != _image) {
-      var scale = widget.outHeight / (renderObject.bottom - renderObject.top);
-      canvas.translate(renderObject.outWidth / 2 + renderObject.drawX * scale,
-          renderObject.outHeight / 2 + renderObject.drawY * scale);
-
-      canvas.rotate(renderObject.rotate1);
-      canvas.scale(renderObject.scale * scale);
-      canvas.drawImage(
-          renderObject.image,
-          Offset(-renderObject.image.width / 2, -renderObject.image.height / 2),
-          Paint());
-    }
-
-    return recorder
-        .endRecording()
-        .toImage(widget.outWidth.toInt(), widget.outHeight.toInt());
+    return CropperImageOut.interface.outImage(
+      image: renderObject.image,
+      outWidth: widget.outWidth,
+      outHeight: widget.outHeight,
+      bottom: renderObject.bottom,
+      top: renderObject.top,
+      drawX: renderObject.drawX,
+      drawY: renderObject.drawY,
+      rotate1: renderObject.rotate1,
+      scale: renderObject.scale,
+    );
   }
 
   @override
