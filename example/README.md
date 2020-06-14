@@ -1,6 +1,6 @@
 #Run Example
 
-cd cxample
+cd example
 
 flutter craete .
 
