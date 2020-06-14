@@ -57,7 +57,7 @@ class _HomeState extends State<Home> {
       body: Container(
         padding: EdgeInsets.all(50),
         child: CropperImage(
-          NetworkImage("http://n.sinaimg.cn/sinacn12/564/w1920h1044/20181111/69c3-hnstwwq4987218.jpg"),
+          AssetImage("images/test.webp"),
           key: _cropperKey,
         ),
       ),

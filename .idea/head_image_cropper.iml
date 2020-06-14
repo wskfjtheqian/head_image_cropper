@@ -15,10 +15,14 @@
       <excludeFolder url="file://$MODULE_DIR$/example/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_fde/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_fde/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_fde/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/macos/Flutter/ephemeral/App.framework/Resources/flutter_assets/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/macos/Flutter/ephemeral/App.framework/Versions/A/Resources/flutter_assets/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/macos/Flutter/ephemeral/App.framework/Versions/Current/Resources/flutter_assets/packages" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
     <orderEntry type="library" name="Flutter Plugins" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
   </component>
 </module>
