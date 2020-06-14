@@ -1,6 +1,6 @@
 name: head_image_cropper
 description: A picture cutting part of flutter, which supports square picture and round picture preview. Suitable for fixed size image clipping. Such as cutting the head
-version: 2.0.7
+version: 2.0.8
 homepage: https://github.com/wskfjtheqian/head_image_cropper
 
 environment:
