@@ -163,6 +163,8 @@ class CropperImageElement extends RenderObjectElement {
     listener = ImageStreamListener((image, synchronousCall) {
       renderObject.image = image.image;
       stream.removeListener(listener);
+    }, onError: (exception, stackTrace) {
+      stream.removeListener(listener);
     });
     stream.addListener(listener);
   }
