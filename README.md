@@ -44,7 +44,7 @@ outImage() 返回裁剪后的图片
 在pubspec.yaml文件中添加
 ```yaml
 dependencies:
-  head_image_cropper: ^2.0.8
+  head_image_cropper: ^3.0.0
 ```
 
 
