@@ -58,4 +58,24 @@ class HtmlImage implements ui.Image {
   }
 
   int get width => element.width;
+
+  @override
+  ui.Image clone() {
+    // TODO: implement clone
+    throw UnimplementedError();
+  }
+
+  @override
+  bool get debugDisposed => throw UnimplementedError();
+
+  @override
+  List<StackTrace> debugGetOpenHandleStackTraces() {
+    // TODO: implement debugGetOpenHandleStackTraces
+    throw UnimplementedError();
+  }
+
+  @override
+  bool isCloneOf(ui.Image other) {
+    return false;
+  }
 }

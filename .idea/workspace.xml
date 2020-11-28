@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="* TODO: IOS不能使用BUG">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/head_image_cropper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/head_image_cropper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/cropper_image_web_out.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/cropper_image_web_out.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +46,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="2.0.8" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectConfigurationFiles">
@@ -38,7 +67,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -47,12 +75,14 @@
     <property name="android.sdk.path" value="$USER_HOME$/sdk/android" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/example/images" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Dart" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -64,12 +94,24 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" singleton="false">
       <option name="additionalArgs" value="-v" />
       <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -99,6 +141,8 @@
       <workItem from="1588408343510" duration="1613000" />
       <workItem from="1588985365422" duration="837000" />
       <workItem from="1589186970063" duration="8748000" />
+      <workItem from="1606578524081" duration="282000" />
+      <workItem from="1606578813376" duration="1755000" />
     </task>
     <task id="LOCAL-00001" summary="发布插件">
       <created>1582950002387</created>
@@ -216,7 +260,18 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="发布插件" />
@@ -227,112 +282,70 @@
     <option name="LAST_COMMIT_MESSAGE" value="* TODO: IOS不能使用BUG" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="423" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592106684231">
-      <screen x="0" y="23" width="1920" height="1008" />
+    <state width="1862" height="196" key="GridCell.Tab.0.bottom" timestamp="1606579508968">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="423" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1037@0.0.1920.1037" timestamp="1587543731900" />
-    <state x="423" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1008@0.23.1920.1008" timestamp="1592106684231" />
-    <state x="656" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589190545491">
-      <screen x="0" y="0" width="1920" height="1037" />
+    <state width="1862" height="196" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1606579508968" />
+    <state width="1862" height="196" key="GridCell.Tab.0.center" timestamp="1606579508967">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="656" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1589190545491" />
-    <state x="772" y="231" width="376" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1589194691809">
-      <screen x="0" y="0" width="1920" height="1037" />
+    <state width="1862" height="196" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1606579508967" />
+    <state width="1862" height="196" key="GridCell.Tab.0.left" timestamp="1606579508967">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="772" y="231" width="376" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1589194691809" />
-    <state x="492" y="160" key="CommitChangelistDialog2" timestamp="1592111666637">
-      <screen x="0" y="23" width="1920" height="1008" />
+    <state width="1862" height="196" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1606579508967" />
+    <state width="1862" height="196" key="GridCell.Tab.0.right" timestamp="1606579508967">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="119" y="110" key="CommitChangelistDialog2/0.0.1920.1037@0.0.1920.1037" timestamp="1589195449427" />
-    <state x="492" y="160" key="CommitChangelistDialog2/0.23.1920.1008@0.23.1920.1008" timestamp="1592111666637" />
-    <state width="610" height="466" key="DebuggerActiveHint" timestamp="1589194228715">
-      <screen x="0" y="0" width="1920" height="1037" />
+    <state width="1862" height="196" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1606579508967" />
+    <state width="1862" height="445" key="GridCell.Tab.1.bottom" timestamp="1606579511975">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="610" height="466" key="DebuggerActiveHint/0.0.1920.1037@0.0.1920.1037" timestamp="1589194228715" />
-    <state x="99" y="99" width="1722" height="839" key="DiffContextDialog" timestamp="1587548359184">
-      <screen x="0" y="0" width="1920" height="1037" />
+    <state width="1862" height="445" key="GridCell.Tab.1.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1606579511975" />
+    <state width="1862" height="445" key="GridCell.Tab.1.center" timestamp="1606579511975">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="99" y="99" width="1722" height="839" key="DiffContextDialog/0.0.1920.1037@0.0.1920.1037" timestamp="1587548359184" />
-    <state x="746" y="270" width="734" height="732" key="FileChooserDialogImpl" timestamp="1588407874978">
-      <screen x="0" y="0" width="1920" height="1037" />
+    <state width="1862" height="445" key="GridCell.Tab.1.center/0.0.1920.1030@0.0.1920.1030" timestamp="1606579511975" />
+    <state width="1862" height="445" key="GridCell.Tab.1.left" timestamp="1606579511974">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="746" y="270" width="734" height="732" key="FileChooserDialogImpl/0.0.1920.1037@0.0.1920.1037" timestamp="1588407874978" />
-    <state width="1878" height="26" key="GridCell.Tab.0.bottom" timestamp="1592124176631">
-      <screen x="0" y="23" width="1920" height="1008" />
+    <state width="1862" height="445" key="GridCell.Tab.1.left/0.0.1920.1030@0.0.1920.1030" timestamp="1606579511974" />
+    <state width="1862" height="445" key="GridCell.Tab.1.right" timestamp="1606579511975">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1874" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278666" />
-    <state width="1878" height="26" key="GridCell.Tab.0.bottom/0.23.1920.1008@0.23.1920.1008" timestamp="1592124176631" />
-    <state width="1878" height="26" key="GridCell.Tab.0.center" timestamp="1592124176631">
-      <screen x="0" y="23" width="1920" height="1008" />
+    <state width="1862" height="445" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1606579511975" />
+    <state x="374" y="52" key="SettingsEditor" timestamp="1606578905318">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1874" height="231" key="GridCell.Tab.0.center/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278665" />
-    <state width="1878" height="26" key="GridCell.Tab.0.center/0.23.1920.1008@0.23.1920.1008" timestamp="1592124176631" />
-    <state width="1878" height="26" key="GridCell.Tab.0.left" timestamp="1592124176631">
-      <screen x="0" y="23" width="1920" height="1008" />
+    <state x="374" y="52" key="SettingsEditor/0.0.1920.1030@0.0.1920.1030" timestamp="1606578905318" />
+    <state x="460" y="178" key="Vcs.Push.Dialog.v2" timestamp="1606578950073">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1874" height="231" key="GridCell.Tab.0.left/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278665" />
-    <state width="1878" height="26" key="GridCell.Tab.0.left/0.23.1920.1008@0.23.1920.1008" timestamp="1592124176631" />
-    <state width="1878" height="26" key="GridCell.Tab.0.right" timestamp="1592124176631">
-      <screen x="0" y="23" width="1920" height="1008" />
+    <state x="460" y="178" key="Vcs.Push.Dialog.v2/0.0.1920.1030@0.0.1920.1030" timestamp="1606578950073" />
+    <state x="528" y="32" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606579290121">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1874" height="231" key="GridCell.Tab.0.right/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278666" />
-    <state width="1878" height="26" key="GridCell.Tab.0.right/0.23.1920.1008@0.23.1920.1008" timestamp="1592124176631" />
-    <state width="1878" height="26" key="GridCell.Tab.1.bottom" timestamp="1592124176632">
-      <screen x="0" y="23" width="1920" height="1008" />
+    <state x="528" y="32" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1030@0.0.1920.1030" timestamp="1606579290121" />
+    <state x="522" y="0" width="874" height="1034" key="search.everywhere.popup" timestamp="1606580183516">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1874" height="231" key="GridCell.Tab.1.bottom/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278613" />
-    <state width="1878" height="26" key="GridCell.Tab.1.bottom/0.23.1920.1008@0.23.1920.1008" timestamp="1592124176632" />
-    <state width="1878" height="26" key="GridCell.Tab.1.center" timestamp="1592124176631">
-      <screen x="0" y="23" width="1920" height="1008" />
-    </state>
-    <state width="1874" height="231" key="GridCell.Tab.1.center/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278613" />
-    <state width="1878" height="26" key="GridCell.Tab.1.center/0.23.1920.1008@0.23.1920.1008" timestamp="1592124176631" />
-    <state width="1878" height="26" key="GridCell.Tab.1.left" timestamp="1592124176631">
-      <screen x="0" y="23" width="1920" height="1008" />
-    </state>
-    <state width="1874" height="231" key="GridCell.Tab.1.left/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278613" />
-    <state width="1878" height="26" key="GridCell.Tab.1.left/0.23.1920.1008@0.23.1920.1008" timestamp="1592124176631" />
-    <state width="1878" height="26" key="GridCell.Tab.1.right" timestamp="1592124176632">
-      <screen x="0" y="23" width="1920" height="1008" />
-    </state>
-    <state width="1874" height="231" key="GridCell.Tab.1.right/0.0.1920.1037@0.0.1920.1037" timestamp="1589196278613" />
-    <state width="1878" height="26" key="GridCell.Tab.1.right/0.23.1920.1008@0.23.1920.1008" timestamp="1592124176632" />
-    <state x="599" y="226" key="RollbackChangesDialog" timestamp="1589196013041">
-      <screen x="0" y="0" width="1920" height="1037" />
-    </state>
-    <state x="599" y="226" key="RollbackChangesDialog/0.0.1920.1037@0.0.1920.1037" timestamp="1589196013041" />
-    <state x="660" y="179" width="1026" height="857" key="SettingsEditor" timestamp="1592106591687">
-      <screen x="0" y="23" width="1920" height="1008" />
-    </state>
-    <state x="660" y="160" width="1026" height="857" key="SettingsEditor/0.0.1920.1037@0.0.1920.1037" timestamp="1587740716735" />
-    <state x="660" y="179" key="SettingsEditor/0.23.1920.1008@0.23.1920.1008" timestamp="1592106591687" />
-    <state x="815" y="431" key="VCS.ChangelistChooser" timestamp="1589190879186">
-      <screen x="0" y="0" width="1920" height="1037" />
-    </state>
-    <state x="815" y="431" key="VCS.ChangelistChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1589190879186" />
-    <state x="263" y="264" key="Vcs.Push.Dialog.v2" timestamp="1592111667885">
-      <screen x="0" y="23" width="1920" height="1008" />
-    </state>
-    <state x="263" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1037@0.0.1920.1037" timestamp="1588326746385" />
-    <state x="263" y="264" key="Vcs.Push.Dialog.v2/0.23.1920.1008@0.23.1920.1008" timestamp="1592111667885" />
-    <state x="617" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589190628005">
-      <screen x="0" y="0" width="1920" height="1037" />
-    </state>
-    <state x="617" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1037@0.0.1920.1037" timestamp="1589190628005" />
-    <state x="206" y="251" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589193160465">
-      <screen x="0" y="0" width="1920" height="1037" />
-    </state>
-    <state x="206" y="251" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1037@0.0.1920.1037" timestamp="1589193160465" />
-    <state x="552" y="222" width="815" height="592" key="find.popup" timestamp="1589193615958">
-      <screen x="0" y="0" width="1920" height="1037" />
-    </state>
-    <state x="552" y="222" width="815" height="592" key="find.popup/0.0.1920.1037@0.0.1920.1037" timestamp="1589193615958" />
-    <state x="229" y="288" key="new project wizard" timestamp="1587633377633">
-      <screen x="0" y="0" width="1920" height="1037" />
-    </state>
-    <state x="229" y="288" key="new project wizard/0.0.1920.1037@0.0.1920.1037" timestamp="1587633377633" />
+    <state x="522" y="0" width="874" height="1034" key="search.everywhere.popup/0.0.1920.1030@0.0.1920.1030" timestamp="1606580183516" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$USER_HOME$/sdk/Flutter/packages/flutter/lib/src/rendering/object.dart</url>
+          <line>1672</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$USER_HOME$/sdk/Flutter/packages/flutter/lib/src/rendering/object.dart</url>
+          <line>1673</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="FlutterRunConfigurationType">
         <watch expression="_pendingPointerEvents" />

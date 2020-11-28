@@ -27,9 +27,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  var _cropperKey = GlobalKey();
-
-  ImageProvider _image;
+  var _controller = CropperController();
 
   @override
   Widget build(BuildContext context) {
@@ -39,11 +37,15 @@ class _HomeState extends State<Home> {
           FlatButton(
             child: Text("保存"),
             onPressed: () {
-              (_cropperKey.currentContext as CropperImageElement).outImage().then((image) async {
+              _controller.outImage()?.then((image) async {
                 //保存或上传代码
-                var bytes = (await (image.toByteData(format: ImageByteFormat.png))).buffer.asUint8List();
+                var bytes =
+                    (await (image.toByteData(format: ImageByteFormat.png)))
+                        .buffer
+                        .asUint8List();
 
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
                   return ShowImage(
                     data: bytes,
                   );
@@ -58,7 +60,7 @@ class _HomeState extends State<Home> {
         padding: EdgeInsets.all(50),
         child: CropperImage(
           AssetImage("images/test.webp"),
-          key: _cropperKey,
+          controller: _controller,
         ),
       ),
     );
