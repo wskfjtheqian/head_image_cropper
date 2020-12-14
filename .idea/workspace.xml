@@ -22,7 +22,6 @@
     <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/head_image_cropper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/head_image_cropper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/head_image_cropper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/head_image_cropper.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,7 @@
       </list>
     </option>
   </component>
+  <component name="GOROOT" path="/sdk/Go" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -73,6 +73,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -97,17 +98,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" singleton="false">
       <option name="additionalArgs" value="-v" />
       <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
@@ -146,7 +136,8 @@
       <workItem from="1589186970063" duration="8748000" />
       <workItem from="1606578524081" duration="282000" />
       <workItem from="1606578813376" duration="1966000" />
-      <workItem from="1607927793471" duration="4568000" />
+      <workItem from="1607927793471" duration="6157000" />
+      <workItem from="1607935091357" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="发布插件">
       <created>1582950002387</created>
@@ -274,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607928054090</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="&#10;* 更新Flutter SDK to V1.24.0-8.0&#10;* 添加CropperController输出图像&#10;* 删除Element输出图像">
+      <created>1607932503141</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607932503141</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,10 +300,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="&#10;* 更新Flutter SDK to V1.24.0-8.0&#10;* 添加CropperController输出图像&#10;* 删除Element输出图像" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="504" y="43" key="CommitChangelistDialog2" timestamp="1607928054014">
+    <state x="504" y="43" key="CommitChangelistDialog2" timestamp="1607932503070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="504" y="43" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607928054014" />
+    <state x="504" y="43" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607932503070" />
     <state width="1874" height="324" key="GridCell.Tab.0.bottom" timestamp="1607932258622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -351,11 +349,11 @@
     </state>
     <state x="374" y="52" key="SettingsEditor/0.0.1920.1030@0.0.1920.1030" timestamp="1606578905318" />
     <state x="374" y="53" width="1328" height="740" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607929965616" />
-    <state x="460" y="180" key="Vcs.Push.Dialog.v2" timestamp="1607931625416">
+    <state x="460" y="180" key="Vcs.Push.Dialog.v2" timestamp="1607932503962">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="460" y="178" key="Vcs.Push.Dialog.v2/0.0.1920.1030@0.0.1920.1030" timestamp="1606580631937" />
-    <state x="460" y="180" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607931625416" />
+    <state x="460" y="180" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607932503962" />
     <state x="528" y="32" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606579290121">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
