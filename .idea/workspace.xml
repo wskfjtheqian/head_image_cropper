@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="&#10;* 更新Flutter SDK to V1.24.0-8.0&#10;* 添加CropperController输出图像&#10;* 删除Element输出图像">
+    <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/head_image_cropper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/head_image_cropper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/head_image_cropper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/head_image_cropper.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +97,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" singleton="false">
       <option name="additionalArgs" value="-v" />
       <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
@@ -133,7 +146,7 @@
       <workItem from="1589186970063" duration="8748000" />
       <workItem from="1606578524081" duration="282000" />
       <workItem from="1606578813376" duration="1966000" />
-      <workItem from="1607927793471" duration="34000" />
+      <workItem from="1607927793471" duration="4568000" />
     </task>
     <task id="LOCAL-00001" summary="发布插件">
       <created>1582950002387</created>
@@ -254,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606580629108</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="&#10;* 更新Flutter SDK to V1.24.0-8.0&#10;* 添加CropperController输出图像&#10;* 删除Element输出图像">
+      <created>1607928054090</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607928054090</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,74 +302,89 @@
     <option name="LAST_COMMIT_MESSAGE" value="&#10;* 更新Flutter SDK to V1.24.0-8.0&#10;* 添加CropperController输出图像&#10;* 删除Element输出图像" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1862" height="196" key="GridCell.Tab.0.bottom" timestamp="1606579508968">
-      <screen x="0" y="0" width="1920" height="1030" />
+    <state x="504" y="43" key="CommitChangelistDialog2" timestamp="1607928054014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="504" y="43" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607928054014" />
+    <state width="1874" height="324" key="GridCell.Tab.0.bottom" timestamp="1607932258622">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1862" height="196" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1606579508968" />
-    <state width="1862" height="196" key="GridCell.Tab.0.center" timestamp="1606579508967">
-      <screen x="0" y="0" width="1920" height="1030" />
+    <state width="1874" height="324" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607932258622" />
+    <state width="1874" height="324" key="GridCell.Tab.0.center" timestamp="1607932258622">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1862" height="196" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1606579508967" />
-    <state width="1862" height="196" key="GridCell.Tab.0.left" timestamp="1606579508967">
-      <screen x="0" y="0" width="1920" height="1030" />
+    <state width="1874" height="324" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607932258622" />
+    <state width="1874" height="324" key="GridCell.Tab.0.left" timestamp="1607932258622">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1862" height="196" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1606579508967" />
-    <state width="1862" height="196" key="GridCell.Tab.0.right" timestamp="1606579508967">
-      <screen x="0" y="0" width="1920" height="1030" />
+    <state width="1874" height="324" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607932258622" />
+    <state width="1874" height="324" key="GridCell.Tab.0.right" timestamp="1607932258622">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1862" height="196" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1606579508967" />
-    <state width="1862" height="445" key="GridCell.Tab.1.bottom" timestamp="1606579511975">
-      <screen x="0" y="0" width="1920" height="1030" />
+    <state width="1874" height="324" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607932258622" />
+    <state width="1874" height="324" key="GridCell.Tab.1.bottom" timestamp="1607932258570">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1862" height="445" key="GridCell.Tab.1.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1606579511975" />
-    <state width="1862" height="445" key="GridCell.Tab.1.center" timestamp="1606579511975">
-      <screen x="0" y="0" width="1920" height="1030" />
+    <state width="1874" height="324" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607932258570" />
+    <state width="1874" height="324" key="GridCell.Tab.1.center" timestamp="1607932258569">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1862" height="445" key="GridCell.Tab.1.center/0.0.1920.1030@0.0.1920.1030" timestamp="1606579511975" />
-    <state width="1862" height="445" key="GridCell.Tab.1.left" timestamp="1606579511974">
-      <screen x="0" y="0" width="1920" height="1030" />
+    <state width="1874" height="324" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607932258569" />
+    <state width="1874" height="324" key="GridCell.Tab.1.left" timestamp="1607932258569">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1862" height="445" key="GridCell.Tab.1.left/0.0.1920.1030@0.0.1920.1030" timestamp="1606579511974" />
-    <state width="1862" height="445" key="GridCell.Tab.1.right" timestamp="1606579511975">
-      <screen x="0" y="0" width="1920" height="1030" />
+    <state width="1874" height="324" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607932258569" />
+    <state width="1874" height="324" key="GridCell.Tab.1.right" timestamp="1607932258570">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1862" height="445" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1606579511975" />
-    <state x="374" y="53" width="1328" height="740" key="SettingsEditor" timestamp="1607927826858">
+    <state width="1874" height="324" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607932258570" />
+    <state x="374" y="53" width="1328" height="740" key="SettingsEditor" timestamp="1607929965616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="374" y="52" key="SettingsEditor/0.0.1920.1030@0.0.1920.1030" timestamp="1606578905318" />
-    <state x="374" y="53" width="1328" height="740" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607927826858" />
-    <state x="460" y="178" key="Vcs.Push.Dialog.v2" timestamp="1606580631937">
-      <screen x="0" y="0" width="1920" height="1030" />
+    <state x="374" y="53" width="1328" height="740" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607929965616" />
+    <state x="460" y="180" key="Vcs.Push.Dialog.v2" timestamp="1607931625416">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="460" y="178" key="Vcs.Push.Dialog.v2/0.0.1920.1030@0.0.1920.1030" timestamp="1606580631937" />
+    <state x="460" y="180" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607931625416" />
     <state x="528" y="32" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606579290121">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="528" y="32" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1030@0.0.1920.1030" timestamp="1606579290121" />
+    <state x="750" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607929851832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="750" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607929851832" />
+    <state x="494" y="237" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1607931719440">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="494" y="237" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1607931719440" />
+    <state x="647" y="264" width="626" height="512" key="find.popup" timestamp="1607929272300">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="647" y="264" width="626" height="512" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607929272300" />
     <state x="522" y="0" width="874" height="1034" key="search.everywhere.popup" timestamp="1606580183516">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="522" y="0" width="874" height="1034" key="search.everywhere.popup/0.0.1920.1030@0.0.1920.1030" timestamp="1606580183516" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$USER_HOME$/sdk/Flutter/packages/flutter/lib/src/rendering/object.dart</url>
-          <line>1672</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$USER_HOME$/sdk/Flutter/packages/flutter/lib/src/rendering/object.dart</url>
-          <line>1673</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="FlutterRunConfigurationType">
         <watch expression="_pendingPointerEvents" />
+        <watch expression="(sizedByParent &amp;&amp; debugDoingThisResize" />
+        <watch expression="((sizedByParent &amp;&amp; debugDoingThisResize) ||&#10;          (!sizedByParent &amp;&amp; debugDoingThisLayout))" />
+        <watch expression="(sizedByParent &amp;&amp; debugDoingThisResize) ||&#10;          (!sizedByParent &amp;&amp; debugDoingThisLayout)" />
+        <watch expression="(!sizedByParent &amp;&amp; debugDoingThisLayout)" />
       </configuration>
     </watches-manager>
   </component>
