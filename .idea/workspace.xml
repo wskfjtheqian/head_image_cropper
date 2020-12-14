@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="&#10;* 更新Flutter SDK to V1.24.0-8.0&#10;* 添加CropperController输出图像&#10;* 删除Element输出图像">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,14 +63,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/sdk/android" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/example/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -81,7 +83,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -93,17 +95,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" singleton="false">
       <option name="additionalArgs" value="-v" />
       <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
@@ -142,6 +133,7 @@
       <workItem from="1589186970063" duration="8748000" />
       <workItem from="1606578524081" duration="282000" />
       <workItem from="1606578813376" duration="1966000" />
+      <workItem from="1607927793471" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="发布插件">
       <created>1582950002387</created>
@@ -278,6 +270,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="发布插件" />
@@ -321,10 +314,11 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="1862" height="445" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1606579511975" />
-    <state x="374" y="52" key="SettingsEditor" timestamp="1606578905318">
-      <screen x="0" y="0" width="1920" height="1030" />
+    <state x="374" y="53" width="1328" height="740" key="SettingsEditor" timestamp="1607927826858">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="374" y="52" key="SettingsEditor/0.0.1920.1030@0.0.1920.1030" timestamp="1606578905318" />
+    <state x="374" y="53" width="1328" height="740" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607927826858" />
     <state x="460" y="178" key="Vcs.Push.Dialog.v2" timestamp="1606580631937">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

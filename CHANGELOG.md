@@ -37,10 +37,9 @@
 * 修改IOS不能使用的问题
 * 完成所有平台测试
 
-
-
 [3.0.0] - 2020/11/29
 
-* 更新Flutter SDK to V1.24.0-8.0
+* 更新Flutter SDK to V1.25.0
 * 添加CropperController输出图像
 * 删除Element输出图像
+
