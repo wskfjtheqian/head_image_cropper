@@ -20,7 +20,8 @@ Future<ui.Image> outImage({
     canvas.translate(outWidth / 2 + drawX * temp, outHeight / 2 + drawY * temp);
     canvas.rotate(rotate1);
     canvas.scale(scale * temp);
-    canvas.drawImage(image, ui.Offset(-image.width / 2, -image.height / 2), ui.Paint());
+    canvas.drawImage(
+        image, ui.Offset(-image.width / 2, -image.height / 2), ui.Paint());
   }
   ui.Picture picture = recorder.endRecording();
   return picture.toImage(outWidth.toInt(), outHeight.toInt());
