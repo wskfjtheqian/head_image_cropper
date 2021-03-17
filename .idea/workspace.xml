@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="&#10;* 更新Flutter SDK to V1.24.0-8.0&#10;* 添加CropperController输出图像&#10;* 删除Element输出图像">
+    <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="修改WEB端  canvaskit 模式下不能输出图像的BUG&#10;Modify the bug that can't output image in canvas mode on the web">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/cropper_image_web_out.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/cropper_image_web_out.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +140,8 @@
       <workItem from="1608007888020" duration="2034000" />
       <workItem from="1608187525992" duration="321000" />
       <workItem from="1615950233770" duration="102000" />
-      <workItem from="1615950341717" duration="149000" />
+      <workItem from="1615950341717" duration="572000" />
+      <workItem from="1615950968124" duration="1865000" />
     </task>
     <task id="LOCAL-00001" summary="发布插件">
       <created>1582950002387</created>
@@ -291,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608008164519</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="修改WEB端  canvaskit 模式下不能输出图像的BUG">
+      <created>1615950617330</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1615950617330</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,18 +322,10 @@
     <MESSAGE value="* TODO: 修改WEB的BUG." />
     <MESSAGE value="* TODO: IOS不能使用BUG" />
     <MESSAGE value="&#10;* 更新Flutter SDK to V1.24.0-8.0&#10;* 添加CropperController输出图像&#10;* 删除Element输出图像" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;* 更新Flutter SDK to V1.24.0-8.0&#10;* 添加CropperController输出图像&#10;* 删除Element输出图像" />
+    <MESSAGE value="修改WEB端  canvaskit 模式下不能输出图像的BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改WEB端  canvaskit 模式下不能输出图像的BUG" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/src/cropper_image_web_out.dart</url>
-          <line>17</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="FlutterRunConfigurationType">
         <watch expression="_pendingPointerEvents" />
