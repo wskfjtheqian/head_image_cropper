@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="18525497-4b6b-402e-bdb9-c79ac9fc840d" name="Default Changelist" comment="&#10;* 更新Flutter SDK to V1.24.0-8.0&#10;* 添加CropperController输出图像&#10;* 删除Element输出图像">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/cropper_image_web_out.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/cropper_image_web_out.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +144,8 @@
       <workItem from="1608187525992" duration="321000" />
       <workItem from="1615950233770" duration="102000" />
       <workItem from="1615950341717" duration="149000" />
+      <workItem from="1616772746944" duration="1923000" />
+      <workItem from="1617118186457" duration="1770000" />
     </task>
     <task id="LOCAL-00001" summary="发布插件">
       <created>1582950002387</created>

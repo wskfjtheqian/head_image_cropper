@@ -43,3 +43,6 @@
 * 添加CropperController输出图像
 * 删除Element输出图像
 
+[3.0.1] - 2021/03/30
+
+* 修改BUGpu
