@@ -1,3 +1,4 @@
+
 import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
@@ -37,10 +38,10 @@ class _HomeState extends State<Home> {
           FlatButton(
             child: Text("保存"),
             onPressed: () {
-              _controller.outImage()?.then((image) async {
+              _controller.outImage().then((image) async {
                 //保存或上传代码
                 var bytes =
-                    (await (image.toByteData(format: ImageByteFormat.png)))
+                    (await (image.toByteData(format: ImageByteFormat.png)))!
                         .buffer
                         .asUint8List();
 
@@ -70,7 +71,7 @@ class _HomeState extends State<Home> {
 class ShowImage extends StatefulWidget {
   final Uint8List data;
 
-  const ShowImage({Key key, this.data}) : super(key: key);
+  const ShowImage({Key? key, required this.data}) : super(key: key);
 
   @override
   _ShowImageState createState() => _ShowImageState();

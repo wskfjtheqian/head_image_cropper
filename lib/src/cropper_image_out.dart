@@ -1,15 +1,15 @@
 import 'dart:ui' as ui;
 
 Future<ui.Image> outImage({
-  ui.Image image,
-  double outWidth,
-  double outHeight,
-  double bottom,
-  double top,
-  double drawX,
-  double drawY,
-  double rotate1,
-  double scale,
+  required ui.Image image,
+  required double outWidth,
+  required double outHeight,
+  required double bottom,
+  required double top,
+  required double drawX,
+  required double drawY,
+  required double rotate1,
+  required double scale,
 }) {
   var recorder = ui.PictureRecorder();
   var canvas = ui.Canvas(recorder, ui.Rect.fromLTRB(0, 0, outWidth, outHeight));

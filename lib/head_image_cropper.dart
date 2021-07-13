@@ -14,10 +14,10 @@ import 'package:flutter/rendering.dart';
 const Color _defualtMaskColor = Color.fromARGB(160, 0, 0, 0);
 
 class CropperController {
-  CropperImageElement _element;
+  CropperImageElement? _element;
 
   Future<ui.Image> outImage() {
-    return _element?._outImage();
+    return _element!._outImage();
   }
 }
 
@@ -25,7 +25,7 @@ class CropperController {
 class CropperImage extends RenderObjectWidget {
   CropperImage(
     this.image, {
-    Key key,
+    Key? key,
     this.controller,
     this.limitations = true,
     this.isArc = false,
@@ -80,7 +80,7 @@ class CropperImage extends RenderObjectWidget {
   ///round 预览框圆角 默认值：8
   final double round;
 
-  final CropperController controller;
+  final CropperController? controller;
 
   @override
   CropperImageElement createElement() {
@@ -143,7 +143,7 @@ class CropperImage extends RenderObjectWidget {
 }
 
 class CropperImageElement extends RenderObjectElement {
-  ImageProvider _image;
+  ImageProvider? _image;
 
   CropperImageElement(CropperImage widget) : super(widget);
 
@@ -173,7 +173,7 @@ class CropperImageElement extends RenderObjectElement {
       return;
     }
     final ImageStream stream =
-        _image.resolve(createLocalImageConfiguration(this));
+        _image!.resolve(createLocalImageConfiguration(this));
     var listener;
     listener = ImageStreamListener((image, synchronousCall) {
       renderObject.image = image.image;
@@ -195,7 +195,7 @@ class CropperImageElement extends RenderObjectElement {
   }
 
   @override
-  void mount(Element parent, dynamic newSlot) {
+  void mount(Element? parent, dynamic newSlot) {
     super.mount(parent, newSlot);
     _image = widget.image;
     widget.controller?._element = this;
@@ -204,11 +204,11 @@ class CropperImageElement extends RenderObjectElement {
 
   Future<ui.Image> _outImage() {
     return imgOut.outImage(
-      image: renderObject.image,
+      image: renderObject.image!,
       outWidth: widget.outWidth,
       outHeight: widget.outHeight,
-      bottom: renderObject.bottom,
-      top: renderObject.top,
+      bottom: renderObject.bottom!,
+      top: renderObject.top!,
       drawX: renderObject.drawX,
       drawY: renderObject.drawY,
       rotate1: renderObject.rotate1,
@@ -224,9 +224,9 @@ class CropperImageElement extends RenderObjectElement {
 }
 
 class Pointer {
-  final int device;
-  final double dx;
-  final double dy;
+  final int? device;
+  final double? dx;
+  final double? dy;
 
   Pointer({this.device, this.dx, this.dy});
 
@@ -237,7 +237,7 @@ class Pointer {
 }
 
 class CropperImageRender extends RenderProxyBox {
-  ui.Image _image;
+  ui.Image? _image;
   bool _limitations = true;
 
   set limitations(bool value) {
@@ -262,24 +262,24 @@ class CropperImageRender extends RenderProxyBox {
   double round = 8.0;
 
   double scale = 0;
-  double centerX;
-  double centerY;
+  double? centerX;
+  double? centerY;
   double drawX = 0;
   double drawY = 0;
-  double bottom;
-  double left;
-  double right;
-  double top;
+  double? bottom;
+  double? left;
+  double? right;
+  double? top;
   double rotate1 = 0;
 
-  Pointer _old1, _old2, _new1, _new2;
+  Pointer? _old1, _old2, _new1, _new2;
 
-  set image(ui.Image image) {
+  set image(ui.Image? image) {
     _image = image;
     markNeedsPaint();
   }
 
-  ui.Image get image => _image;
+  ui.Image? get image => _image;
 
   @override
   void handleEvent(PointerEvent event, BoxHitTestEntry entry) {
@@ -316,7 +316,7 @@ class CropperImageRender extends RenderProxyBox {
     if (null == _old1 && _old2?.device != event.device) {
       _old1 = Pointer(
           device: event.device, dx: event.position.dx, dy: event.position.dy);
-    } else if (null == _old2 && _old1.device != event.device) {
+    } else if (null == _old2 && _old1!.device != event.device) {
       _old2 = Pointer(
           device: event.device, dx: event.position.dx, dy: event.position.dy);
     }
@@ -333,17 +333,17 @@ class CropperImageRender extends RenderProxyBox {
 
     if (null != _old1 && null != _old2 && null != _new1 && null != _new2) {
       var newLine = math.sqrt(
-          math.pow(_new1.dx - _new2.dx, 2) + math.pow(_new1.dy - _new2.dy, 2));
+          math.pow(_new1!.dx! - _new2!.dx!, 2) + math.pow(_new1!.dy! - _new2!.dy!, 2));
       var oldLine = math.sqrt(
-          math.pow(_old1.dx - _old2.dx, 2) + math.pow(_old1.dy - _old2.dy, 2));
+          math.pow(_old1!.dx! - _old2!.dx!, 2) + math.pow(_old1!.dy! - _old2!.dy!, 2));
       this.scale *= (newLine / oldLine);
 
-      this.drawX += ((_new1.dx - _old1.dx) + (_new2.dx - _old2.dx)) / 2;
-      this.drawY += ((_new1.dy - _old1.dy) + (_new2.dy - _old2.dy)) / 2;
+      this.drawX += ((_new1!.dx! - _old1!.dx!) + (_new2!.dx! - _old2!.dx!)) / 2;
+      this.drawY += ((_new1!.dy! - _old1!.dy!) + (_new2!.dy! - _old2!.dy!)) / 2;
 
       if (!limitations) {
-        var k1 = (_old1.dx - _old2.dx) / (_old1.dy - _old2.dy);
-        var k2 = (_new1.dx - _new2.dx) / (_new1.dy - _new2.dy);
+        var k1 = (_old1!.dx! - _old2!.dx!) / (_old1!.dy! - _old2!.dy!);
+        var k2 = (_new1!.dx! - _new2!.dx!) / (_new1!.dy! - _new2!.dy!);
 
         var temp = ((k2 - k1) / (1 + k1 * k2) * math.pi / 2);
         if (!temp.isNaN) {
@@ -353,8 +353,8 @@ class CropperImageRender extends RenderProxyBox {
       markNeedsPaint();
     } else if ((null != _old1 && null != _new1) ||
         (null != _old2 && null != _new2)) {
-      this.drawX += ((_new1 ?? _new2).dx - (_old1 ?? _old2).dx);
-      this.drawY += ((_new1 ?? _new2).dy - (_old1 ?? _old2).dy);
+      this.drawX += ((_new1 ?? _new2)!.dx! - (_old1 ?? _old2)!.dx!);
+      this.drawY += ((_new1 ?? _new2)!.dy! - (_old1 ?? _old2)!.dy!);
       markNeedsPaint();
     }
     if (_old1?.device == event.device) {
@@ -405,11 +405,11 @@ class CropperImageRender extends RenderProxyBox {
     if (null != _image) {
       _onPosition();
       canvas.save();
-      canvas.translate(centerX + drawX, centerY + drawY);
+      canvas.translate(centerX! + drawX, centerY! + drawY);
       canvas.rotate(rotate1);
       canvas.scale(scale);
       canvas.drawImage(
-          _image, Offset(-_image.width / 2, -_image.height / 2), Paint());
+          _image!, Offset(-_image!.width/ 2, -_image!.height/ 2), Paint());
       canvas.restore();
     }
 
@@ -439,7 +439,7 @@ class CropperImageRender extends RenderProxyBox {
             ..lineTo(0, size.height)
             ..lineTo(size.width, size.height)
             ..lineTo(size.width, 0)
-            ..addOval(Rect.fromLTRB(left, top, right, bottom))
+            ..addOval(Rect.fromLTRB(left!, top!, right!, bottom!))
             ..close(),
           Paint()
             ..color = maskColor
@@ -447,7 +447,7 @@ class CropperImageRender extends RenderProxyBox {
 
       canvas.drawPath(
           Path()
-            ..addOval(Rect.fromLTRB(left, top, right, bottom))
+            ..addOval(Rect.fromLTRB(left!, top!, right!, bottom!))
             ..close(),
           Paint()
             ..color = lineColor
@@ -460,7 +460,7 @@ class CropperImageRender extends RenderProxyBox {
             ..lineTo(0, size.height)
             ..lineTo(size.width, size.height)
             ..lineTo(size.width, 0)
-            ..addRRect(RRect.fromLTRBXY(left, top, right, bottom, round, round))
+            ..addRRect(RRect.fromLTRBXY(left!, top!, right!, bottom!, round, round))
             ..close(),
           Paint()
             ..color = maskColor
@@ -468,7 +468,7 @@ class CropperImageRender extends RenderProxyBox {
 
       canvas.drawPath(
           Path()
-            ..addRRect(RRect.fromLTRBXY(left, top, right, bottom, round, round))
+            ..addRRect(RRect.fromLTRBXY(left!, top!, right!, bottom!, round, round))
             ..close(),
           Paint()
             ..color = lineColor
@@ -487,10 +487,10 @@ class CropperImageRender extends RenderProxyBox {
     var height = outHeight * fw / 2 - maskPadding;
     centerX = size.width / 2;
     centerY = size.height / 2;
-    left = centerX - width;
-    right = centerX + width;
-    top = centerY - height;
-    bottom = centerY + height;
+    left = centerX! - width;
+    right = centerX! + width;
+    top = centerY! - height;
+    bottom = centerY! + height;
   }
 
   _onPosition() {
@@ -499,8 +499,8 @@ class CropperImageRender extends RenderProxyBox {
         scale = 5;
       }
 
-      var fw = (right - left) / _image.width;
-      var fh = (bottom - top) / _image.height;
+      var fw = (right! - left!) / _image!.width;
+      var fh = (bottom! - top!) / _image!.height;
       if (fw < fh) {
         fw = fh;
       }
@@ -508,20 +508,20 @@ class CropperImageRender extends RenderProxyBox {
         scale = fw;
       }
 
-      var width = _image.width * scale / 2;
-      if (left < centerX + drawX - width) {
-        drawX = left - centerX + width;
+      var width = _image!.width * scale / 2;
+      if (left! < centerX! + drawX - width) {
+        drawX = left! - centerX! + width;
       }
-      if (right > centerX + drawX + width) {
-        drawX = right - centerX - width;
+      if (right! > centerX! + drawX + width) {
+        drawX = right! - centerX! - width;
       }
 
-      var height = _image.height * scale / 2;
-      if (top < centerY + drawY - height) {
-        drawY = top - centerY + height;
+      var height = _image!.height * scale / 2;
+      if (top! < centerY! + drawY - height) {
+        drawY = top! - centerY! + height;
       }
-      if (bottom > centerY + drawY + height) {
-        drawY = bottom - centerY - height;
+      if (bottom! > centerY! + drawY + height) {
+        drawY = bottom! - centerY! - height;
       }
     }
   }

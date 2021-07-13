@@ -5,15 +5,15 @@ import 'dart:ui' as ui;
 import 'cropper_image_out.dart' as out;
 
 Future<ui.Image> outImage({
-  ui.Image image,
-  double outWidth,
-  double outHeight,
-  double bottom,
-  double top,
-  double drawX,
-  double drawY,
-  double rotate1,
-  double scale,
+  required ui.Image image,
+  required double outWidth,
+  required double outHeight,
+  required double bottom,
+  required double top,
+  required double drawX,
+  required double drawY,
+  required double rotate1,
+  required double scale,
 }) {
   if (!(image is ImageElement)) {
     return out.outImage(
@@ -28,14 +28,17 @@ Future<ui.Image> outImage({
       scale: scale,
     );
   }
-  var canvas = CanvasElement(width: outWidth.toInt(), height: outHeight.toInt());
+  var canvas =
+      CanvasElement(width: outWidth.toInt(), height: outHeight.toInt());
   if (null != image) {
     var temp = outHeight / (bottom - top);
 
-    canvas.context2D.translate(outWidth / 2 + drawX * temp, outHeight / 2 + drawY * temp);
+    canvas.context2D
+        .translate(outWidth / 2 + drawX * temp, outHeight / 2 + drawY * temp);
     canvas.context2D.rotate(rotate1);
     canvas.context2D.scale(scale * temp, scale * temp);
-    canvas.context2D.drawImage((image as dynamic).imgElement, -image.width / 2, -image.height / 2);
+    canvas.context2D.drawImage(
+        (image as dynamic).imgElement, -image.width / 2, -image.height / 2);
   }
 
   return Future.value((HtmlImage(canvas)));
@@ -50,10 +53,11 @@ class HtmlImage implements ui.Image {
   void dispose() {}
 
   @override
-  int get height => element.height;
+  int get height => element.height!;
 
   @override
-  Future<ByteData> toByteData({ui.ImageByteFormat format = ui.ImageByteFormat.png}) async {
+  Future<ByteData> toByteData(
+      {ui.ImageByteFormat format = ui.ImageByteFormat.png}) async {
     var completer = new Completer<ByteData>();
 
     final out = new FileReader();
@@ -67,7 +71,7 @@ class HtmlImage implements ui.Image {
     return completer.future;
   }
 
-  int get width => element.width;
+  int get width => element.width!;
 
   @override
   ui.Image clone() {
