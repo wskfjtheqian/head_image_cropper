@@ -30,7 +30,6 @@ Future<ui.Image> outImage({
   }
   var canvas =
       CanvasElement(width: outWidth.toInt(), height: outHeight.toInt());
-  if (null != image) {
     var temp = outHeight / (bottom - top);
 
     canvas.context2D
@@ -39,7 +38,6 @@ Future<ui.Image> outImage({
     canvas.context2D.scale(scale * temp, scale * temp);
     canvas.context2D.drawImage(
         (image as dynamic).imgElement, -image.width / 2, -image.height / 2);
-  }
 
   return Future.value((HtmlImage(canvas)));
 }

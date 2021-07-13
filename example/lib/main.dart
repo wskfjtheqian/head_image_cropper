@@ -1,5 +1,3 @@
-
-import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
 
@@ -35,8 +33,9 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         actions: <Widget>[
-          FlatButton(
+          TextButton(
             child: Text("保存"),
+            style: ButtonStyle(foregroundColor: MaterialStateProperty.all(Colors.white)),
             onPressed: () {
               _controller.outImage().then((image) async {
                 //保存或上传代码

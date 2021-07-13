@@ -156,17 +156,8 @@ class CropperImageElement extends RenderObjectElement {
 
   @override
   void forgetChild(Element child) {
-    assert(null == child);
+   super.forgetChild(child);
   }
-
-  @override
-  void insertChildRenderObject(RenderObject child, slot) {}
-
-  @override
-  void moveChildRenderObject(RenderObject child, slot) {}
-
-  @override
-  void removeChildRenderObject(RenderObject child) {}
 
   void _resolveImage() {
     if (null == _image) {
