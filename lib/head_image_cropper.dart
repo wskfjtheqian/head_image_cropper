@@ -269,6 +269,7 @@ class CropperImageRender extends RenderProxyBox {
 
   set image(ui.Image? image) {
     _image = image;
+    scale = 0;
     markNeedsPaint();
   }
 
