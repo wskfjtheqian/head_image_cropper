@@ -15,7 +15,7 @@ Future<ui.Image> outImage({
   required double rotate1,
   required double scale,
 }) {
-  if (!(image is ImageElement)) {
+  if (image.runtimeType.toString() != "HtmlImage") {
     return out.outImage(
       image: image,
       outWidth: outWidth,
